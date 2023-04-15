@@ -13,12 +13,6 @@ function initGeolocate(){
     }
 }
 
-$(function(){
-    $("#tour-button").click(function(){
-        window.location.href = `ar_location_tour.html?source=${latitude};${longitude}&destination=${destination[1]};${destination[0]}`;
-    })
-})
-
 function success(position){
     latitude = position.coords.latitude;
     longitude = position.coords.longitude;
